@@ -2,7 +2,7 @@
   "name": "chatx",
   "version": "1.0.0",
   "description": "CHAT oficial de COOPEFACSA R.L",
-  "homepage":"coopefacsa.coop",
+  "homepage": "coopefacsa.coop",
   "main": "index.js",
   "author": {
     "name": "Róger Alvarez",
@@ -12,23 +12,24 @@
     "appId": "coop.coopefacsa.chatx",
     "win": {
       "icon": "./chaticon.ico",
-      "target":"msi"
+      "target": "msi"
     },
     "linux": {
       "target": [
         "deb"
       ],
-      "category":"Social"
+      "category": "Social"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron index.js",
-    "build":"electron-builder -lw"
+    "build": "electron-builder -lw"
   },
   "keywords": [],
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
     "electron-reload": "^1.5.0"
   },
   "devDependencies": {
